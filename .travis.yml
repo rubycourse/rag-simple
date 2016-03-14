@@ -2,11 +2,10 @@ sudo: false
 language: ruby
 rvm:
 - 2.2.2
+before_install:
+- echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc
 script:
 - git clone https://github.com/saasbook/hw-ruby-intro-ci
 notifications:
-  email: falsex
+  email: false
   slack: cs169dev:OPMf1tPzfO3a4gz6gGTOFV7w
-env:
-  global:
-    secure: y7aPcUr+gaqKr2qs+MF2nMMygWub6TohHSs2VLlFgXmLFSvPQZRLeILgwMwQRl6ojcgMD7AVMwMxGcg2PGM/8wDFDoZOvo6NsSFGLUC1Z0kXzLGlR3yJCQbl5h1iUB4+dMjjXw/IrXLnRoGinNVGMil4TnVLxb4zz7QVIETluEHETEnYQaUXRbtygKI1/mXmq37ghSugJDdBiHQjAn/8MoQZHerC8/nLR4wmPkuSUH8Af+OKQDxgPcE3JIFoMzZUZ46rtfIZQ44gBGe9feypWQh2mIUVeXf+3ESQzVCPqbRQpt8K++6Tn9N98TvlOWfqWAlhr5ZyLwfKQt9DdkNFgxuyEhPMvQxDrm+P44D1HBNucB5/OyKDIG/j7vWzlV98l7W2AWQlGX0+a2yPGdf5+GUKzn5BQzYJRBB89umpnH3bSIvkmP6lA/6ao9I+gl1o4kHi5SyK1XP94XCr0YbfNKulbPX9yOuVEND+AcOaKnV/nc4igu4Pq50u9Mijq7B+sK0hzMzllBTVtGjUevNkAQZTn0ZUH+2P40LRnjVCoA4bdGOwORyKEuEJRCQLvhZ6POPyBaCmGvXSXUlOumzVYHhpI5h/jNnLEdzcoc+alSFP4eeUiajUJVFVeNbOLqVny88GWl1HMrj8L0hw7u+u/foLMFy5m0N0pqmngSett8U=
