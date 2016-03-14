@@ -8,5 +8,10 @@ Feature: Grade Basic Submission
 
   Scenario: Grade Correct Submission
     Given that a student has submitted a correct solution
-    And I have specified a specification
+    And I have specified a specification for 'part1_spec.rb'
     Then they should see correct feedback
+
+  Scenario: Grade Incorrect Submission
+    Given that a student has submitted an incorrect solution
+    And I have specified a specification for 'part3_spec.rb'
+    Then they should see incorrect feedback
