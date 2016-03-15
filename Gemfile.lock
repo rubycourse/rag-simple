@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     builder (3.2.2)
+    byebug (6.0.2)
     cucumber (2.3.2)
       builder (>= 2.1.2)
       cucumber-core (~> 1.4.0)
@@ -35,6 +36,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   cucumber
   rspec
 

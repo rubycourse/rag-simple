@@ -7,8 +7,6 @@ Given(/^we have '(.*)' available$/) do |repo|
 end
 
 Given(/^we have reset RSpec$/) do
-  RSpec.reset
-  RSpec.world.reset
   RSpec.clear_examples
 end
 
